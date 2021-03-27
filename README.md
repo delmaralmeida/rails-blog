@@ -1,24 +1,16 @@
-# README
+# Rails Blog
+
+This app is a simple blog made with Ruby on Rails by following the first steps in the [Rails Guides - Getting Started](https://guides.rubyonrails.org/getting_started.html)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+User Flow:
 
-* System dependencies
+* User as CRUD actions for Articles
 
-* Configuration
+* User can create, read and delete Comments
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* User can select a status for Articles and Comments
