@@ -1,0 +1,26 @@
+<%= form_with model: [ @article, @comment ] do |form| %>
+  <div>
+    <%= form.label :commenter %><br>
+    <%= form.text_field :commenter %>
+    <% form.object.errors.full_messages_for(:commenter).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+    <% form.object.errors.full_messages_for(:body).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :status %><br>
+    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+  </div>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
